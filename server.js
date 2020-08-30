@@ -7,7 +7,7 @@ const path=require('path');
 const db=require(path.join(__dirname,"./App/models/index"));
 
 
-const dbURL = process.env.MONGODB_URL || db.url;
+const dbURL = "mongodb+srv://utkarsh:Ragman*16@cluster0.kedzq.mongodb.net/temp_1?retryWrites=true&w=majority";
 
 db.mongoose.connect(dbURL,{
     userNewUrlParser:true,
