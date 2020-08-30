@@ -7,7 +7,9 @@ const path=require('path');
 const db=require(path.join(__dirname,"./App/models/index"));
 
 
-db.mongoose.connect(db.url,{
+const dbURL = process.env.MONGODB_URL || db.url;
+
+db.mongoose.connect(dbURL,{
     userNewUrlParser:true,
     useUnifiedTopology: true
   
