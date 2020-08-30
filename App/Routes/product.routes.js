@@ -2,7 +2,7 @@ const path=require('path');
 
 module.exports = app => {
  
-  const product = require(path.join(__dirname,"../controllers/product.controller"));
+  const product = require(path.join(__dirname,"../Controllers/product.controller"));
     var router = require("express").Router();
   
     // Create a new Tutorial
