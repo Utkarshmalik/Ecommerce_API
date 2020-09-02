@@ -5,10 +5,10 @@ const app=express();
 const path=require('path');
 const db= require(path.join(__dirname,'./App/models/index'))
 
-const URL="mongodb+srv://utkarsh:qwerty123@cluster0.dfduc.mongodb.net/ecommerce_app?retryWrites=true&w=majority";
+//const URL="mongodb+srv://utkarsh:qwerty123@cluster0.dfduc.mongodb.net/ecommerce_app?retryWrites=true&w=majority";
 
 
-db.mongoose.connect(URL,{
+db.mongoose.connect(db.url,{
     useNewUrlParser: true,
     useUnifiedTopology: true  
 }).then(()=>{
