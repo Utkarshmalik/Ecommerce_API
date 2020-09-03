@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module.exports = mongoose=>
 {
 
@@ -38,5 +39,21 @@ module.exports = mongoose=>
     const Product=mongoose.model("prdouct",prodcutSchema)
 
     return Product;
+=======
+module.exports = (mongoose)=>
+{
+    const Product=mongoose.model(
+        "product",
+        mongoose.Schema({
+            id:Number,
+            title:String,
+            price:Number,
+            description:String,
+            categoty:String,
+            image:String
+        })
+    )
+    return Product
+>>>>>>> 1b69c73a4527dc870ba9f084aed1378c6c61871a
 }
 
